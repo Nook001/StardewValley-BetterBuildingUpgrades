@@ -1,0 +1,31 @@
+{
+    "big-greenhouse.name": "Большая Теплица",
+    "big-greenhouse.description": "Расширяет теплицу, позволяя выращивать больше культур.",
+
+    "deluxe-greenhouse.name": "Элитная Теплица",
+    "deluxe-greenhouse.description": "Элитная теплица с ночным освещением для ускорения роста культур и новой области.",
+
+
+    "big-silo.name": "Большая Силосная башня",
+    "big-silo.description": "Хранит в два раза больше сена, чем обычный силос.",
+
+    "deluxe-silo.name": "Элитный Силосная башня",
+    "deluxe-silo.description": "Stores twice as much hay as a big silo.",
+
+    
+    "big-well.name": "Большой колодец",
+    "big-well.description": "Большой колодец, способный обеспечить водой Rice Shoot.",
+
+    "big-stable.name": "Большой Конюшня",
+    "big-stable.description": "Улучшите конюшню, чтобы лошадь могла бегать быстрее.",
+
+
+
+    "config.EnableGreenhouseUpgrade": "Включить обновление теплицы",
+    "config.EnableSiloUpgrade": "Включить обновление силоса",
+    "config.EnableWellUpgrade": "Включить обновление колодца",
+    "config.EnableStableUpgrade": "Включить обновление конюшни",
+
+    "config.RetextureCompatibilityMode": "Режим совместимости с ретекстуром",
+    "config.FrontierFarmCompatibilityMode": "Режим совместимости с пограничной фермой"
+}

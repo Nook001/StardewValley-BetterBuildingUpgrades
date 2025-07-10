@@ -1,0 +1,9 @@
+D:\ProgramProject\C#\BetterBuildingUpgrades\bin\Debug\net6.0\BetterBuildingUpgrades.deps.json
+D:\ProgramProject\C#\BetterBuildingUpgrades\bin\Debug\net6.0\BetterBuildingUpgrades.dll
+D:\ProgramProject\C#\BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.csproj.AssemblyReference.cache
+D:\ProgramProject\C#\BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProgramProject\C#\BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.AssemblyInfoInputs.cache
+D:\ProgramProject\C#\BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.AssemblyInfo.cs
+D:\ProgramProject\C#\BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.csproj.CoreCompileInputs.cache
+D:\ProgramProject\C#\BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.dll
+D:\ProgramProject\C#\BetterBuildingUpgrades\bin\Debug\net6.0\config.json

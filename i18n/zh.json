@@ -1,0 +1,31 @@
+{
+    "big-greenhouse.name": "大温室",
+    "big-greenhouse.description": "扩展温室以允许种植更多作物。",
+
+    "deluxe-greenhouse.name": "高级温室",
+    "deluxe-greenhouse.description": "豪华温室，配有夜间照明以加速作物生长和新区域。",
+
+    
+    "big-silo.name": "大筒仓",
+    "big-silo.description": "可储存两倍量的草料。",
+
+    "deluxe-silo.name": "高级筒仓",
+    "deluxe-silo.description": "可储存四倍量的草料。",
+
+    
+    "big-well.name": "大水井",
+    "big-well.description": "更大的水井，可以为稻苗提供水源。",
+
+    "big-stable.name": "大马厩",
+    "big-stable.description": "升级马厩，让马跑得更快。",
+
+
+
+    "config.EnableGreenhouseUpgrade": "启用温室升级",
+    "config.EnableSiloUpgrade": "启用筒仓升级",
+    "config.EnableWellUpgrade": "启用水井升级",
+    "config.EnableStableUpgrade": "启用马厩升级",
+
+    "config.RetextureCompatibilityMode": "纹理Mod兼容模式",
+    "config.FrontierFarmCompatibilityMode": "Frontier Farm边境农场兼容模式"
+}

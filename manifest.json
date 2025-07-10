@@ -1,0 +1,10 @@
+{
+    "Name": "BetterBuildingUpgrades",
+    "Author": "Nook",
+    "Version": "1.0.9",
+    "Description": "Provides more options for building upgrades in the game.", 
+    "UniqueID": "Nook.BetterBuildingUpgrades",
+    "EntryDll": "BetterBuildingUpgrades.dll",
+    "MinimumApiVersion": "4.2.1",
+    "UpdateKeys": [ "Nexus:32366" ]
+  }

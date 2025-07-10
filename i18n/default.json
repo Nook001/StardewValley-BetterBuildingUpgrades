@@ -1,0 +1,32 @@
+{
+    "big-greenhouse.name": "Big Greenhouse",
+    "big-greenhouse.description": "Larger greenhouse to allow for more crops.",
+
+    "deluxe-greenhouse.name": "Deluxe Greenhouse",
+    "deluxe-greenhouse.description": "Deluxe greenhouse with night lighting to accelerate crop growth and a new area.",
+
+
+    "big-silo.name": "Big Silo",
+    "big-silo.description": "Stores twice as much hay as a regular silo.",
+
+    "deluxe-silo.name": "Deluxe Silo",
+    "deluxe-silo.description": "Stores twice as much hay as a big silo.",
+
+    
+    "big-well.name": "Big Well",
+    "big-well.description": "Larger well that can supply water to Rice Shoot.",
+
+
+    "big-stable.name": "Big Stable",
+    "big-stable.description": "Upgrade stable to let horse run faster.",
+
+
+
+    "config.EnableGreenhouseUpgrade": "Enable Greenhouse Upgrade",
+    "config.EnableSiloUpgrade": "Enable Silo Upgrade",
+    "config.EnableWellUpgrade": "Enable Well Upgrade",
+    "config.EnableStableUpgrade": "Enable Stable Upgrade",
+
+    "config.RetextureCompatibilityMode": "Retexture Compatibility Mode",
+    "config.FrontierFarmCompatibilityMode": "Frontier Farm Compatibility Mode"
+}

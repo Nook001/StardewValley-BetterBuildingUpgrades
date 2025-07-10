@@ -1,0 +1,10 @@
+{
+    "EnableGreenhouseUpgrade": true,
+    "EnableSiloUpgrade": true,
+    "EnableWellUpgrade": true,
+    "EnableStableUpgrade": true,
+
+
+    "TextureCompatibilityMode": false,
+    "FrontierFarmCompatibilityMode": false
+}

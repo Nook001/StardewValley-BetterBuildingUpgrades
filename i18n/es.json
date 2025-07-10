@@ -1,0 +1,31 @@
+{
+    "big-greenhouse.name": "Invernadero Grande",
+    "big-greenhouse.description": "Amplía el invernadero para dar cabida a más cultivos.",
+
+    "deluxe-greenhouse.name": "Invernadero De Lujo",
+    "deluxe-greenhouse.description": "Invernadero de lujo con iluminación nocturna para acelerar el crecimiento de los cultivos y una nueva área.",
+
+
+    "big-silo.name": "Silo Grande",
+    "big-silo.description": "Almacena el doble de heno que un silo normal.",
+
+    "deluxe-silo.name": "Silo De Lujo",
+    "deluxe-silo.description": "Almacena el doble de heno que un silo grande.",
+
+    
+    "big-well.name": "Pozo Grande",
+    "big-well.description": "Pozo más grande que puede suministrar agua a Rice Shoot.",
+
+    "big-stable.name": "Establo Grande",
+    "big-stable.description": "Mejora el establo para que el caballo corra más rápido.",
+
+
+
+    "config.EnableGreenhouseUpgrade": "Habilitar actualización de invernadero",
+    "config.EnableSiloUpgrade": "Habilitar actualización de silo",
+    "config.EnableWellUpgrade": "Habilitar actualización de pozo",
+    "config.EnableStableUpgrade": "Habilitar actualización de establo",
+
+    "config.RetextureCompatibilityMode": "Modo de compatibilidad de retextura",
+    "config.FrontierFarmCompatibilityMode": "Modo de compatibilidad de granja fronteriza"
+}

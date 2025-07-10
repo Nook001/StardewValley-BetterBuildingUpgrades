@@ -1,0 +1,31 @@
+{
+    "big-greenhouse.name": "大型の温室",
+    "big-greenhouse.description": "温室を拡張し、より多くの作物を栽培できるようにする。",
+
+    "deluxe-greenhouse.name": "デラックス温室",
+    "deluxe-greenhouse.description": "夜間照明付きのデラックス温室で、作物の成長を加速させ、新しいエリアを追加します。",
+
+
+    "big-silo.name": "大型のサイロ",
+    "big-silo.description": "通常のサイロの2倍の干し草を保管できます。",
+
+    "deluxe-silo.name": "デラックスサイロ",
+    "deluxe-silo.description": "大きなサイロの2倍の干し草を貯蔵できる。",
+
+    
+    "big-well.name": "大型の井戸",
+    "big-well.description": "ライス・シュートに水を供給できる大きめの井戸。",
+
+    "big-stable.name": "大型の厩舎",
+    "big-stable.description": "厩舎をアップグレードして、馬をより速く走らせる。",
+
+
+
+    "config.EnableGreenhouseUpgrade": "温室アップグレードを有効にする",
+    "config.EnableSiloUpgrade": "サイロアップグレードを有効にする",
+    "config.EnableWellUpgrade": "井戸アップグレードを有効にする",
+    "config.EnableStableUpgrade": "厩舎アップグレードを有効にする",
+
+    "config.RetextureCompatibilityMode": "リテクスチャー互換モード",
+    "config.FrontierFarmCompatibilityMode": "フロンティアファーム互換モード"
+}
