@@ -16,10 +16,10 @@ public static class FeatureManager
     /// </summary>
     public static void OnDayStarted(object? sender, DayStartedEventArgs e)
     {
-        // Check if the world is ready and the player is not null
-
         // Remove the original greenhouse if Big Greenhouse exists
         RefreshGreenhouseMap();
+
+        // Accelerate crops in deluxe greenhouse
         AccelerateDeluxeGreenhouseCrops(sender, e);
     }
     
@@ -27,12 +27,11 @@ public static class FeatureManager
     {
         ModEntry.ModHelper.GameContent.InvalidateCache("Maps/Greenhouse");
 
-        // Force all locations to reload
+        // Force Greenhouse reloading
         foreach (GameLocation location in Game1.locations)
         {
             if (location.Name == "Greenhouse") location.loadMap("Maps/Greenhouse", true); 
         }
-
     }
     
     private static void AccelerateDeluxeGreenhouseCrops(object? sender, DayStartedEventArgs e)
@@ -43,48 +42,42 @@ public static class FeatureManager
             
         // Get the greenhouse location
         GameLocation greenhouse = Game1.getLocationFromName("Greenhouse");
-        if (greenhouse == null)
+        if (greenhouse is null)
             return;
             
-        // Process all crops in the greenhouse
+        // Process all tiles in the greenhouse
         foreach (var tile in greenhouse.terrainFeatures.Pairs)
         {
             // Check if the terrain feature is a crop
-            if (tile.Value is StardewValley.TerrainFeatures.HoeDirt dirt && dirt.crop != null)
+            if (tile.Value is not StardewValley.TerrainFeatures.HoeDirt { crop: not null } dirt)
+			    continue;
+            
+            var crop = dirt.crop;
+
+            // Skip fully grown or dead crops
+            if (crop.fullyGrown.Value || crop.dead.Value)
+                continue;
+
+            // Only accelerate newly planted crops
+            if (crop.dayOfCurrentPhase.Value + crop.phaseDays.Take(crop.currentPhase.Value).Sum() > 1)
+                continue;
+
+            // Calculate the days to accelerate
+            int daysToAccelerate = (int) Math.Floor(0.3 * (crop.phaseDays.Sum() - 99999));
+            // Apply the acceleration
+            for (int i = 0; i < crop.phaseDays.Count - 1; i++)
             {
-                var crop = dirt.crop;
-
-                // Skip fully grown or dead crops or crops that are not in the first day of growth
-                if (crop.fullyGrown.Value || crop.dead.Value)
-                    continue;
-
-                // Only accelerate crops that are newly planted (within first 2 days)
-                int totalDaysGrown = crop.dayOfCurrentPhase.Value;
-                for (int i = 0; i < crop.currentPhase.Value; i++)
+                if (crop.phaseDays[i] < daysToAccelerate)
                 {
-                    totalDaysGrown += crop.phaseDays[i];
+                    daysToAccelerate -= crop.phaseDays[i];
                 }
-                
-                if (totalDaysGrown > 1)
-                    continue;
-
-                int daysToAccelerate = (int) Math.Floor(0.3 * (crop.phaseDays.Sum() - 99999));
-
-                // Apply the acceleration
-                for (int i = 0; i < crop.phaseDays.Count - 1; i++)
+                else
                 {
-                    if (crop.phaseDays[i] < daysToAccelerate)
-                    {
-                        daysToAccelerate -= crop.phaseDays[i];
-                    }
-                    else
-                    {
-                        crop.dayOfCurrentPhase.Value = daysToAccelerate + 1;
-                        crop.currentPhase.Value = i;
-                        break;
-                    }
+                    crop.dayOfCurrentPhase.Value = daysToAccelerate + 1;
+                    crop.currentPhase.Value = i;
+                    break;
                 }
-            } 
+            }
         }
     }
     
@@ -113,7 +106,7 @@ public static class FeatureManager
                 farm.buildings.Remove(building);
                 break;
             }
-
+            
             if (building.buildingType.Value == "Big Greenhouse" && BuildingDetector.HasDeluxeGreenhouse())
             {
                 farm.buildings.Remove(building);
@@ -124,9 +117,7 @@ public static class FeatureManager
     
 
 
-    /// <summary>
-    /// Call when the player warps to a new location
-    /// </summary>
+    // Fix player warp for modding map
     public static void OnPlayerWarped(object? sender, WarpedEventArgs e)
     {
         // If player is entering upgraded greenhouse
@@ -136,44 +127,36 @@ public static class FeatureManager
         }
     }
     
+
+    // Warp player to corret entrance of the greenhouse
     private static void UpdateGreenhouseWarp(object? sender, UpdateTickedEventArgs e)
     {
         ModEntry.ModHelper.Events.GameLoop.UpdateTicked -= UpdateGreenhouseWarp; // Unsubscribe from the event
-        if (Game1.getLocationFromName("Greenhouse") != null)
-        {
-            if (ModEntry.Config.FrontierFarmCompatibilityMode)
-            {
-                Game1.player.Position = new Vector2(13*64, 31*64); // Frontier Farm
-            }
-            else
-            {
-                Game1.player.Position = new Vector2(12*64, 28*64); // Original Greenhouse
-            }
-        }   
+        if (Game1.getLocationFromName("Greenhouse") is null) { return; }
+        
+        Game1.player.Position = ModEntry.Config.FrontierFarmCompatibilityMode 
+            ? new Vector2(13*64, 31*64)  // Frontier Farm
+            : new Vector2(12*64, 28*64); // Original Greenhouse
     }
     
 
-
-    /// <summary>
-    /// Call every tick
-    /// </summary>
     public static void OnUpdateTicked(object? sender, UpdateTickedEventArgs e)
     {
-        if (!Context.IsWorldReady || Game1.player == null)
+        // Check if the world and player are ready
+        if (!Context.IsWorldReady || Game1.player is null)
             return;
 
         // Player is on the horse and has a big stable
-        if (Game1.player.mount != null && BuildingDetector.HasBigStable())
+        if (Game1.player.mount is not null && BuildingDetector.HasBigStable())
             AccelerateHorseSpeed();
     }
-
 
     private static void AccelerateHorseSpeed()
     {    
         Game1.player.applyBuff(new Buff(
-        id: "HorseBuff",
-        duration: 20,
-        effects: new BuffEffects() { Speed = { 2 } }
+            id: "HorseBuff",
+            duration: 20,
+            effects: new BuffEffects() { Speed = { 2 } }
         ));
     }
 }

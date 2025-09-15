@@ -8,9 +8,9 @@ namespace BetterBuildingUpgrades;
 /// </summary>
 public static class BuildingDetector
 {
+    // Greenhouse
     public static bool HasUpgradedGreenhouse() =>
         ModEntry.Config.EnableGreenhouseUpgrade && (HasBigGreenhouse() || HasDeluxeGreenhouse());
-
 
     public static bool HasBigGreenhouse() => HasBuilding("Big Greenhouse");
 
@@ -18,7 +18,7 @@ public static class BuildingDetector
 
     public static bool HasRegularGreenhouse() => HasBuilding("Greenhouse");
 
-
+    // Stable
     public static bool HasBigStable() =>
         ModEntry.Config.EnableStableUpgrade && HasBuilding("Big Stable");
     
@@ -29,15 +29,9 @@ public static class BuildingDetector
             // Only check for buildings if the world is ready
             if (!Context.IsWorldReady || Game1.getFarm() == null)
                 return false;
-                
-            foreach (var building in Game1.getFarm().buildings)
-            {
-                if (building.buildingType.Value == buildingType)
-                {
-                    return true;
-                }
-            }
-            return false;
+            
+            // Check if the farm has given building
+            return Game1.getFarm().buildings.Any(b => b.buildingType.Value == buildingType);
         }
         catch (Exception)
         {

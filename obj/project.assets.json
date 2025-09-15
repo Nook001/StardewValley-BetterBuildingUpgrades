@@ -38,31 +38,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\19342\\.nuget\\packages\\": {},
-    "E:\\Software\\IDE\\VisualStudioKit\\NuGetPackages": {}
+    "C:\\Users\\Nook\\.nuget\\packages\\": {},
+    "D:\\Dev\\VS 2022\\SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProgramProject\\C#\\BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
+      "projectUniqueName": "D:\\Project\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
       "projectName": "BetterBuildingUpgrades",
-      "projectPath": "D:\\ProgramProject\\C#\\BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
-      "packagesPath": "C:\\Users\\19342\\.nuget\\packages\\",
-      "outputPath": "D:\\ProgramProject\\C#\\BetterBuildingUpgrades\\obj\\",
+      "projectPath": "D:\\Project\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
+      "packagesPath": "C:\\Users\\Nook\\.nuget\\packages\\",
+      "outputPath": "D:\\Project\\StardewValley-BetterBuildingUpgrades\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\Software\\IDE\\VisualStudioKit\\NuGetPackages"
+        "D:\\Dev\\VS 2022\\SDK\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\19342\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Nook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -122,7 +120,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "pTs8wUdaIJo=",
+  "dgSpecHash": "bkIxyaql7NM=",
   "success": true,
-  "projectFilePath": "D:\\ProgramProject\\C#\\BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
+  "projectFilePath": "D:\\Project\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\19342\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.3.2\\pathoschild.stardew.modbuildconfig.4.3.2.nupkg.sha512",
-    "C:\\Users\\19342\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\19342\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\19342\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+    "C:\\Users\\Nook\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.3.2\\pathoschild.stardew.modbuildconfig.4.3.2.nupkg.sha512",
+    "C:\\Users\\Nook\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Nook\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Nook\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

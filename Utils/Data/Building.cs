@@ -2,10 +2,9 @@ using StardewModdingAPI;
 using StardewValley.GameData.Buildings;
 using Microsoft.Xna.Framework;
 
-
 namespace BetterBuildingUpgrades;
 
-public static class BuildingManager
+public static partial class DataManager
 {
     const bool Debug = false;
 
@@ -57,6 +56,7 @@ public static class BuildingManager
         HayCapacity = 1000,
         DefaultAction = "BuildingSilo",
     };
+
 
 
 
@@ -146,6 +146,7 @@ public static class BuildingManager
     };
 
 
+    // Stable
     public static BuildingData BigStable (ModConfig config, BuildingData stable) =>
     new()
     {

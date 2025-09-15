@@ -7,3 +7,13 @@ D:\ProgramProject\C#\BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgra
 D:\ProgramProject\C#\BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.csproj.CoreCompileInputs.cache
 D:\ProgramProject\C#\BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.dll
 D:\ProgramProject\C#\BetterBuildingUpgrades\bin\Debug\net6.0\config.json
+D:\Project\StardewValley-BetterBuildingUpgrades\bin\Debug\net6.0\config.json
+D:\Project\StardewValley-BetterBuildingUpgrades\bin\Debug\net6.0\BetterBuildingUpgrades.deps.json
+D:\Project\StardewValley-BetterBuildingUpgrades\bin\Debug\net6.0\BetterBuildingUpgrades.dll
+D:\Project\StardewValley-BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.csproj.AssemblyReference.cache
+D:\Project\StardewValley-BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\StardewValley-BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.AssemblyInfoInputs.cache
+D:\Project\StardewValley-BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.AssemblyInfo.cs
+D:\Project\StardewValley-BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.csproj.CoreCompileInputs.cache
+D:\Project\StardewValley-BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.sourcelink.json
+D:\Project\StardewValley-BetterBuildingUpgrades\obj\Debug\net6.0\BetterBuildingUpgrades.dll
