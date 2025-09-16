@@ -34,6 +34,7 @@ public static partial class ContentManager
                 // Silo upgrades
                 Add(data, "Big Silo", ModEntry.Config.EnableSiloUpgrade, DataManager.BigSilo);
                 Add(data, "Deluxe Silo", ModEntry.Config.EnableSiloUpgrade, DataManager.DeluxeSilo);
+                Add(data, "Grinding Silo", ModEntry.Config.EnableSiloUpgrade, DataManager.GrindingSilo);
                 
                 // Well upgrades
                 Add(data, "Big Well", ModEntry.Config.EnableWellUpgrade, DataManager.BigWell);

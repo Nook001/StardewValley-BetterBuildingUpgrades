@@ -1,6 +1,7 @@
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using GenericModConfigMenu;
+using HarmonyLib;
 
 
 namespace BetterBuildingUpgrades;
@@ -9,14 +10,19 @@ public class ModEntry : Mod
 {
     public static ModConfig Config { get; private set; } = null!;
     public static IModHelper ModHelper { get; private set; } = null!;
+    public static Harmony Harmony { get; private set; } = null!;
     public static ITranslationHelper Translation { get; private set; } = null!;
 
     public override void Entry(IModHelper helper)
     {
+        // Initialize global static fields
         ModHelper = helper; // Mod helper
         Translation = helper.Translation;   // Translation
-        Config = Helper.ReadConfig<ModConfig>(); // Mod configuration
-        RegisterGameEvents(helper); // Register game events
+        Harmony = new Harmony(ModManifest.UniqueID); // Harmony instance
+        Config = Helper.ReadConfig<ModConfig>(); // Mod config
+
+        // Register game events
+        RegisterGameEvents(helper);
     }
 
     private void RegisterGameEvents(IModHelper helper)

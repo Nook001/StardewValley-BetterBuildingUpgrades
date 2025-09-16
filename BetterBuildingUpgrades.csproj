@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <EnableHarmony>true</EnableHarmony>
     <GamePath>D:\Software\Steam\steamapps\common\Stardew Valley</GamePath>
   </PropertyGroup>
 

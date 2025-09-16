@@ -58,6 +58,35 @@ public static partial class DataManager
     };
 
 
+    public static BuildingData GrindingSilo (ModConfig config) =>
+    new()
+    {
+        // Description
+        Name = ModEntry.Translation.Get("grinding-silo.name"),
+        Description = ModEntry.Translation.Get("grinding-silo.description"),
+        Texture = config.RetextureCompatibilityMode ? "Buildings/Silo" : "Buildings/Grinding Silo",
+        // Construction data
+        Builder = "Robin",
+        BuildCost = 1500,
+        BuildDays = Debug ? 0 : 1,
+        BuildMaterials = Debug ? new List<BuildingMaterial>{} :
+        new List<BuildingMaterial>
+        {
+            new() { ItemId = "(O)390", Amount = 400 }, // Stone
+            new() { ItemId = "(O)335", Amount = 15 }, // Iron Bar
+            new() { ItemId = "(O)334", Amount = 20 }, // Copper Bar                        
+        },
+
+        // Upgrade Path
+        BuildingToUpgrade = "Deluxe Silo", // Base Building
+
+        // Silo Behavior
+        Size = new Point(3, 3),
+        HayCapacity = 1200,
+        DefaultAction = "BuildingSilo",
+    };
+
+
 
 
     // Greenhouse

@@ -13,9 +13,9 @@ public static partial class ContentManager
         {
             e.Edit(asset =>
             {
-                var data = asset.AsDictionary<string, BuildingData>().Data;
+                var data = asset.AsDictionary<string, ObjectData>().Data;
 
-                data["Hardwood"] = null!;
+                data["FineHay"] = DataManager.FineHay(ModEntry.Config);
             });
         }
     }
