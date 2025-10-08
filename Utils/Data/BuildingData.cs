@@ -6,7 +6,7 @@ namespace BetterBuildingUpgrades;
 
 public static partial class DataManager
 {
-    const bool Debug = false;
+    const bool Debug = true;
 
     // Silo
     public static BuildingData BigSilo (ModConfig config) => 
@@ -67,7 +67,7 @@ public static partial class DataManager
         Texture = config.RetextureCompatibilityMode ? "Buildings/Silo" : "Buildings/Grinding Silo",
         // Construction data
         Builder = "Robin",
-        BuildCost = 1500,
+        BuildCost = 2500,
         BuildDays = Debug ? 0 : 1,
         BuildMaterials = Debug ? new List<BuildingMaterial>{} :
         new List<BuildingMaterial>

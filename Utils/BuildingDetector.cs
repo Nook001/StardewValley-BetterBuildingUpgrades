@@ -21,6 +21,10 @@ public static class BuildingDetector
     // Stable
     public static bool HasBigStable() =>
         ModEntry.Config.EnableStableUpgrade && HasBuilding("Big Stable");
+
+
+    // Silo todo
+    public static bool HasGrindingSilo() => true;
     
     private static bool HasBuilding(string buildingType)
     {

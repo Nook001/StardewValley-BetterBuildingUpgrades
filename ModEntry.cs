@@ -23,6 +23,7 @@ public class ModEntry : Mod
 
         // Register game events
         RegisterGameEvents(helper);
+        PatcherManager.Init(this);
     }
 
     private void RegisterGameEvents(IModHelper helper)
@@ -34,6 +35,7 @@ public class ModEntry : Mod
         helper.Events.Content.AssetRequested += ContentManager.LoadTextures;
         helper.Events.Content.AssetRequested += ContentManager.LoadBuildings;
         helper.Events.Content.AssetRequested += ContentManager.LoadMaps;
+        helper.Events.Content.AssetRequested += ContentManager.LoadItems;
         
         // Game events
         helper.Events.GameLoop.DayStarted += FeatureManager.OnDayStarted;
