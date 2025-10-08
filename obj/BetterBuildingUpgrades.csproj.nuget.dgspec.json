@@ -1,29 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj": {}
+    "D:\\ProgramProject\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj": {}
   },
   "projects": {
-    "D:\\Project\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj": {
+    "D:\\ProgramProject\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
+        "projectUniqueName": "D:\\ProgramProject\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
         "projectName": "BetterBuildingUpgrades",
-        "projectPath": "D:\\Project\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
-        "packagesPath": "C:\\Users\\Nook\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\StardewValley-BetterBuildingUpgrades\\obj\\",
+        "projectPath": "D:\\ProgramProject\\StardewValley-BetterBuildingUpgrades\\BetterBuildingUpgrades.csproj",
+        "packagesPath": "C:\\Users\\19342\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgramProject\\StardewValley-BetterBuildingUpgrades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Dev\\VS 2022\\SDK\\NuGetPackages"
+          "E:\\Software\\IDE\\VisualStudioKit\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nook\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+          "C:\\Users\\19342\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -83,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.1.25451.107\\RuntimeIdentifierGraph.json"
         }
       }
     }

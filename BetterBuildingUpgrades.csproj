@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <EnableHarmony>true</EnableHarmony>
-    <GamePath>D:\Software\Steam\steamapps\common\Stardew Valley</GamePath>
+    <GamePath>E:\SteamLibrary\steamapps\common\Stardew Valley</GamePath>
   </PropertyGroup>
 
   <ItemGroup>
