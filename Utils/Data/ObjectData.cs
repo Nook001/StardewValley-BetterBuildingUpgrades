@@ -18,10 +18,7 @@ public static partial class DataManager
         Price = 10,
 
         Texture = "Objects/FineHay",
-        // SpriteIndex = 0,
-
         Edibility = -300,   // Inedible
-        // Fragility = 0,
         IsDrink = false,
         CanBeGivenAsGift = false,
     };

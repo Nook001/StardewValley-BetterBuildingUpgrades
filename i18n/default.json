@@ -12,6 +12,9 @@
     "deluxe-silo.name": "Deluxe Silo",
     "deluxe-silo.description": "Stores twice as much hay as a big silo.",
 
+    "grinding-silo.name": "Grinding Silo",
+    "grinding-silo.description": "Automatically grinds hay into fine hay. It gives more happiness and friendship to animals.",
+
     
     "big-well.name": "Big Well",
     "big-well.description": "Larger well that can supply water to Rice Shoot.",
@@ -20,7 +23,7 @@
     "big-stable.name": "Big Stable",
     "big-stable.description": "Upgrade stable to let horse run faster.",
 
-    "ground-hay.name": "Ground Hay",
+ 
 
 
 

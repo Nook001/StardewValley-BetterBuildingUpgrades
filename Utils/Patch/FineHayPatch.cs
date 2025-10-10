@@ -149,11 +149,8 @@ internal static class FineHayPatches
 
         if (__instance.modData.Remove(AteFineKey))
         {
-            int bonus = 80; // consider making configurable
-            __instance.friendshipTowardFarmer.Value =
-                Utility.Clamp(__instance.friendshipTowardFarmer.Value + bonus, 0, 1000);
-            // Optional: mood bump
-            // __instance.happiness.Value = Utility.Clamp(__instance.happiness.Value + 15, 0, 255);
+            __instance.friendshipTowardFarmer.Value = Utility.Clamp(__instance.friendshipTowardFarmer.Value + 25, 0, 1000);
+            __instance.happiness.Value = Utility.Clamp(__instance.happiness.Value + 15, 0, 255);
         }
     }
 }

@@ -12,6 +12,9 @@
     "deluxe-silo.name": "Элитный Силосная башня",
     "deluxe-silo.description": "Stores twice as much hay as a big silo.",
 
+    "grinding-silo.name": "Измельчающий Силос",
+    "grinding-silo.description": "Автоматически измельчает сено в мелкое сено. Дает больше счастья и дружбы животным.",
+
     
     "big-well.name": "Большой колодец",
     "big-well.description": "Большой колодец, способный обеспечить водой Rice Shoot.",

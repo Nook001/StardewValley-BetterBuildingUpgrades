@@ -12,6 +12,9 @@
     "deluxe-silo.name": "デラックスサイロ",
     "deluxe-silo.description": "大きなサイロの2倍の干し草を貯蔵できる。",
 
+    "grinding-silo.name": "粉砕サイロ",
+    "grinding-silo.description": "自動的に干草を細かい干草に粉砕します。動物により多くの幸福と友情を与えます。",
+
     
     "big-well.name": "大型の井戸",
     "big-well.description": "ライス・シュートに水を供給できる大きめの井戸。",

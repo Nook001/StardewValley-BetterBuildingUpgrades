@@ -6,7 +6,7 @@ namespace BetterBuildingUpgrades;
 
 public static partial class DataManager
 {
-    const bool Debug = true;
+    const bool Debug = false;
 
     // Silo
     public static BuildingData BigSilo (ModConfig config) => 
@@ -68,12 +68,12 @@ public static partial class DataManager
         // Construction data
         Builder = "Robin",
         BuildCost = 2500,
-        BuildDays = Debug ? 0 : 1,
+        BuildDays = Debug ? 0 : 2,
         BuildMaterials = Debug ? new List<BuildingMaterial>{} :
         new List<BuildingMaterial>
         {
             new() { ItemId = "(O)390", Amount = 400 }, // Stone
-            new() { ItemId = "(O)335", Amount = 15 }, // Iron Bar
+            new() { ItemId = "(O)335", Amount = 30 }, // Iron Bar
             new() { ItemId = "(O)334", Amount = 20 }, // Copper Bar                        
         },
 

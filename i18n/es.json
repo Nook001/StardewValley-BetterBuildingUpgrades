@@ -12,6 +12,9 @@
     "deluxe-silo.name": "Silo De Lujo",
     "deluxe-silo.description": "Almacena el doble de heno que un silo grande.",
 
+    "grinding-silo.name": "Silo de Molienda",
+    "grinding-silo.description": "Muele automáticamente el heno en heno fino. Proporciona más felicidad y amistad a los animales.",
+
     
     "big-well.name": "Pozo Grande",
     "big-well.description": "Pozo más grande que puede suministrar agua a Rice Shoot.",
